@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+
+body{
+  background: hsl(210, 36%, 96%);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 40vh;
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+img{
+  width: 100%;
+  height: 350;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+
+
+}
+.tour-div{
+  background: white;
+  border: none;
+  border-radius: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.data{
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.tours-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.name{
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.price{
+  color: turquoise;
+  background-color: rgb(219, 255, 252);
+  border-radius: 30px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+.info{
+  color: rgb(63, 63, 63);
+}
+
+.delete-btn{
+  border: 1px solid red;
+  border-radius: 8px;
+  background: white;
+  color: red;
+  padding: 8px;
+  width: 40%;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.delete-btn:hover{
+  color: rgb(255, 139, 86);
+  border: 1px solid rgb(255, 139, 86);
+  transition: 200ms;
+}
+
+.no-tours-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.reset-btn{
   color: white;
+  border: 1px solid rgb(0, 88, 160);
+  background: rgb(0, 88, 160);
+  font-size: 1.1rem;
+  padding: 10px;
+  width: 10%;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.reset-btn:hover{
+  
+  border: 1px solid rgb(127, 179, 221);
+  background: rgb(127, 179, 221);
+  transition: 200ms;
+}
+h2{
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.show-btn{
+  color: rgb(127, 179, 221);
+  background: none;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
 }
